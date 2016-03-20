@@ -3,10 +3,18 @@
 
 }
 
-<span>Some new text</span>
+The name is <span data-bind="text: personName"></span>
 
 @section scripts
 {
     <script src="@Url.Content("~/Scripts/knockout/knockout.js")" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        var myViewModel = {
+            personName: "Bob",
+            personAge: 128
+        };
+        ko.applyBindings(myViewModel);
+    </script>
 }
 
