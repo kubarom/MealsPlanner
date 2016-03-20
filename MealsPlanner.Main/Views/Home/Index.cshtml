@@ -1,18 +1,12 @@
-﻿
-@{
-    Layout = null;
+﻿@{
+    ViewBag.Title = "First page";
+
 }
 
-<!DOCTYPE html>
+<span>Some new text</span>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-</head>
-<body>
-<div>
-    <span>Some text</span>
-</div>
-</body>
-</html>
+@section scripts
+{
+    <script src="@Url.Content("~/Scripts/knockout/knockout.js")" type="text/javascript"></script>
+}
+

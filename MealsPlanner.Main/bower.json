@@ -12,6 +12,9 @@
     "test",
     "tests"
   ],
+  "install": {
+    "path" :  "Scripts"
+  },
   "dependencies": {
     "knockout": "~3.4.0"
   }
